@@ -19,7 +19,7 @@ int	main(int argc, char *argv[])
 
 	(void)argc;
 	arguments = 1;
-	while (argv[arguments])
+	while (arguments < argc)
 	{
 		c = 0;
 		while (argv[arguments][c])
