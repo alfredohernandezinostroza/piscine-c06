@@ -6,7 +6,7 @@
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 11:31:58 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/24 22:25:56 by aantonio         ###   ########.fr       */
+/*   Updated: 2022/08/24 22:26:51 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,10 +88,6 @@ int	main(int argc, char *argv[])
 	while (arguments < argc)
 	{
 		c = 0;
-			int test = arguments + '0';
-			write(1,"printing argument ",19);
-			write(1, &test,1);
-			write(1, "\n ",1);
 		while (argv[arguments][c])
 		{
 			write(1, argv[arguments] + c, 1);
