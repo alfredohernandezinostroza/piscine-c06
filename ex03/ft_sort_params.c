@@ -6,7 +6,7 @@
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 11:31:58 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/24 22:26:51 by aantonio         ###   ########.fr       */
+/*   Updated: 2022/08/24 22:29:12 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ void	order_array(char *str_array[], int array_length)
 				break ;
 			j++;
 		}
-
 		i = 0;
 		while (i < (array_length - 1) && str_array[i][j] <= str_array[i + 1][j])
 		{
@@ -81,9 +80,7 @@ int	main(int argc, char *argv[])
 	if (argc == 1)
 		return (0);
 	start = argv + 1;
-	write(1,"before Orderin\n",16);
 	order_array(start, argc - 1);
-	write(1,"after Orderin\n",15);
 	arguments = 1;
 	while (arguments < argc)
 	{
